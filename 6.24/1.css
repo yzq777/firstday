@@ -1,0 +1,176 @@
+body, h1, h2, h3, h4, h5, h6, hr,
+ p, blockquote, dl, dt, dd, ul, 
+ ol, li, pre, form, fieldset, 
+ legend, button, input, textarea, 
+ th, td{ 
+    margin:0; 
+    padding:0;
+    color: #9C9C9C;
+    vertical-align: middle}
+
+body, button, input, select,
+ textarea{ 
+    font:12px/1.5 tahoma, arial, 
+    \5b8b\4f53; }
+
+h1, h2, h3, h4, h5, h6
+{ font-size:100%; }
+
+address, cite, dfn, em, var 
+{ font-style:normal; }
+code, kbd, pre, samp 
+{ font-family:couriernew, courier,
+ monospace; }
+
+small{ font-size:12px; }
+
+ul, ol { list-style:none; }
+
+a { text-decoration:none; }
+
+a:hover { text-decoration:underline; }
+
+sup { vertical-align:text-top; }
+
+sub{ vertical-align:text-bottom; }
+
+legend { color:#000; }
+
+fieldset, img { border:0; }
+
+button, input, select, textarea { font-size:100%; }
+
+table { border-collapse:collapse; border-spacing:0; }
+
+dl dd{margin: 0 auto;padding: 0;}
+
+a{text-decoration: none;color: inherit;padding: 1em;vertical-align: middle}
+        
+a:hover{color: #C40000;}
+
+div a{padding: 0;}
+
+.under dl{
+    display: inline-block;
+    padding-left:50px;
+    padding-right: 96px;
+    position: relative;
+    float: left;
+    width: 100px;}
+
+.under dl dt{
+    position: relative;
+    padding-top: 0;
+    color: #8b8b8b;
+    font-weight: 700;}
+        
+    .under dl dt span{
+        font-size: 18px;
+        color: #646464;
+        font-weight: 700;}
+
+    .under nav div{
+        border-top: 1px white solid; 
+        margin: 1px;
+        width: 100%;
+        height: 36px;}
+
+        .under nav div a{
+            text-align: center;
+            letter-spacing: 1px;
+            margin: 4px 8px;
+            line-height: 12px;
+            font-size: 12px;}
+
+        ul li{display: inline;}
+
+        .main-nav div{
+            padding:4px;
+            margin:1px;
+            text-align: center;
+            vertical-align:middle;
+            letter-spacing:0;
+            border-top:1px white solid;
+            line-height: 1em}
+
+        .main-nav div:hover a{
+            text-decoration: none;
+            color: white;}
+
+        .main-nav div:hover{
+            background-color: 
+            rgba(238, 117, 104,0.5);}
+
+        .hiddenList{
+            background-color: white;
+            display: none;}
+
+        .keyList a{padding:4.64px;}
+
+        .keyList:hover +.hiddenList{
+            display: block;
+            width:96px;
+            height:57px;
+            position: relative;
+            z-index: 1;}
+
+        .keyList:hover{
+            background-color: white;}
+
+        .keyList:hover a{
+            text-decoration: none;
+            color: pink;}
+
+        .searchBody{display: inline;
+            position: relative;
+            margin-left: 100px}
+
+        .searchBody .searchList a{
+            display: block;}
+
+        .title a{padding: 16px;}
+
+        .point{color: yellow;
+            font-weight: bold;
+            font-size: 18px}
+
+        .name{overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;}/*显示字数超出用省略号*/
+
+        .titleImg{
+            margin: 0 auto;
+            width: 100%;
+            display: block;}
+
+        .imgShow img{display: inline;
+            width: 238px;
+            height: 269px;
+            padding:4px;}
+
+        .imgMove img:hover{transform: translate(20px 10px);}
+
+        .lunbo ul li{
+            float:left;
+            border-radius:20px;
+            background-color: grey;
+            width: 20px;
+            height: 20px;
+            margin:10px;}
+
+        .lunbo ul li:hover{
+            background-color: white;}
+
+        .hiddenList dl dd{
+            padding: 10px;
+            border-bottom: 1px dotted grey;}
+
+        .bo{width: 1320px;
+            height: 500px;
+            display: none;}
+
+        .first{display: block}
+
+        .imgMove img:hover{-webkit-transform: translate(-4px,0);}
+
+        .mov:hover{-webkit-transform: scale(1.1);}

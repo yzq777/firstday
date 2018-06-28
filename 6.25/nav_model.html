@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二级导航栏</title>
+</head>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.fist_nav{
+			width: 200px;
+			height: 60px;
+			background: #F94D4D;
+			text-align: center;
+			line-height: 60px;
+			color: white;
+			border-bottom: solid 0.5px #4A4848;
+			cursor: pointer;
+		}
+		.sec_nav{
+			width: 200px;
+			height: 30px;
+			background: #EDF3BD;
+			line-height: 30px;
+			color: black;
+			border-bottom: solid 0.5px #4A4848;
+			cursor: pointer;
+			text-align: center;
+		}
+	</style>
+<body>
+		<div id="nav" style="width: 200px;height: 600px;background: #B9B6B6;margin:0px auto;">
+			<ul style="list-style: none;">
+				<li class="fist_nav">一</li>
+					<ul class="sec" style="list-style: none;display: none;">
+						<li class="sec_nav">1</li>
+						<li class="sec_nav">2</li>
+						<li class="sec_nav">3</li>
+					</ul>
+				<li class="fist_nav">二</li>
+					<ul class="sec" style="list-style: none;display: none;">
+						<li class="sec_nav">1</li>
+						<li class="sec_nav">2</li>
+						<li class="sec_nav">3</li>
+					</ul>
+				<li class="fist_nav">三</li>
+					<ul class="sec" style="list-style: none;display: none;">
+						<li class="sec_nav">1</li>
+						<li class="sec_nav">2</li>
+						<li class="sec_nav">3</li>
+					</ul>
+				<li class="fist_nav">四</li>
+					<ul class="sec" style="list-style: none;display: none;">
+						<li class="sec_nav">1</li>
+						<li class="sec_nav">2</li>
+						<li class="sec_nav">3</li>
+					</ul>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var div = document.getElementById("nav");
+			var li = div.getElementsByClassName("fist_nav");
+			var ul = div.getElementsByClassName("sec");
+			li[0].onclick = function(){
+				ul[0].style.display="block";
+			}
+
+			li[1].onclick = function(){
+				ul[1].style.display="block";
+			}
+
+			li[2].onclick = function(){
+				ul[2].style.display="block";
+			}
+
+			li[3].onclick = function(){
+				ul[3].style.display="block";
+			}
+		
+		</script>
+</body>
+</html>

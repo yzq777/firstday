@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>model</title>
+	<link rel="stylesheet" type="text/css" href="2.css">
+</head>
+<body style="background: #EAF8FA">
+	<div id="top_nav">
+		<div id="nav">
+			<div id="address" onmouseenter="show()" onmouseleave="nothing()">
+			<a href="#">北京</a>
+			</div>
+			<ul id="nav_grey">
+			<li><a href="#" style="text-decoration: none;color: #827F7F;font-size: 14px;"
+				>您好，请登录</a>
+			</li>
+			<li><a href="#" style="color: #F94E4E;font-size: 14px;text-decoration: none;">免费注册</a></li> |
+			<li class="grey">
+				<a href="#">我的订单</a>
+			</li> |
+			<li class="grey" id="my_jd">
+				<a href="#">我的京东</a>
+			</li> |
+			<li class="grey">
+				<a href="#">京东会员</a>
+			</li> |
+			<li class="grey">
+				<a href="#">企业采购</a>
+			</li> |
+			<li class="grey">
+				<a href="#">客户服务</a>
+			</li> |
+			<li class="grey">
+				<a href="#">网站导航</a>
+			</li> |
+			<li class="grey">
+				<a href="#">手机京东</a>
+			</li>
+			</ul>
+			<div id="add_hidden">
+			<a href="#"  style="color: black;text-decoration: none;"> 
+				<table>
+				<tr>北京 上海 天津 重庆
+				</tr>
+				<tr>河北	 山西 河南 辽宁 </tr>
+				<tr>
+				吉林  黑龙江 内蒙古 江苏 </tr>
+				<tr>山东 安徽 浙江 福建</tr>
+				<tr> 湖北 湖南 广东 广西 </tr>
+				<tr>江西 四川 海南 贵州</tr>
+				<tr> 云南 西藏 陕西 甘肃</tr>
+				<tr> 青海 宁夏 新疆 港澳</tr>
+				<tr> 台湾 钓鱼岛 </tr>
+				</table>
+			</a>
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<div class="search" >
+			<img src="img/jd.png">
+			<div  class="search_box">
+			<img src="img/a.png">
+				<input type="text" name="search"  placeholder="洗衣机">
+				<button >搜索</button>
+			</div>
+			<ul>
+				<li class="hot_word"><a href="#">大屏电视</a></li> |
+				<li class="hot_word"><a href="#">299减100</a></li> |
+				<li class="hot_word"><a href="#">圣果蔬菜</a></li> |
+				<li class="hot_word"><a href="#">家电</a></li> |
+				<li class="hot_word"><a href="#">手机</a></li> |
+				<li class="hot_word"><a href="#">潮流新品</a></li>
+			</ul>	
+		</div>
+		<div class="middle">
+			<div class="left_shoplist">
+				<ul id="shopList">
+					<br>
+					<li class="list"><a href="#">家用电器</a></li>
+					<li class="list"><a href="#">手机</a> | <a href="#">运营商</a></li>
+					<li class="list"><a href="#">电脑</a> | <a href="#">数码</a></li>
+					<li class="list"><a href="#">男装</a> | <a href="#">女装</a></li>
+				</ul>
+			</div>
+			<div class="right_hidden"></div>
+		</div>
+	</div>
+
+	
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		var div=document.getElementById("add_hidden");
+		var hidden = document.getElementsByName("right_hidden");
+		function show(){
+			div.style.display="block";
+			div.style.zIndex="1000";
+		}
+		function nothing(){
+			div.style.display="none";
+		}
+
+	</script>
+</body>
+</html>

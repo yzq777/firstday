@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+ <head>
+	  <meta charset="UTF-8">
+	  <meta name="Keywords" content="">
+	  <meta name="Description" content="">
+	  <title>幻灯片式图片轮播</title>
+	  <style type="text/css">
+			*{
+				padding:0;
+				margin:0
+			}
+			img{
+				vertical-align:middle;
+			}	
+		</style>
+ </head>
+
+ <body>
+	<div id="belt" style="margin:200px auto; margin-left: 400px;">
+		<img src='images/1.jpg' id="1"style="display: none;">
+		<img src="images/2.jpg" id="2" style="display: none;">
+
+		<img src="images/3.jpg" id="3"style="display: none;">
+
+		<img src="images/4.jpg" id="4"  style="display: none;">
+
+		<img src="images/5.jpg" id="5"style="display: none;">
+	
+	</div>	
+
+<button id="btn" style="width: 50px;height: 50px;background: yellow;border-radius: 50%;border:none;text-align: center;line-height: 50px;position: fixed;top:500px;left: 1000px;cursor: pointer;">暂停</button> 
+<button id="con" style="width: 50px;height: 50px;background: red;border-radius: 50%;border:none;text-align: center;line-height: 50px;position: fixed;top:500px;left: 1100px;cursor: pointer;">继续</button>
+
+<button id="priv" style="width: 50px;height: 50px;background: #1317F0;border-radius: 50%;border:none;text-align: center;line-height: 50px;position: fixed;top:400px;left: 1000px;cursor: pointer;">前一张</button>
+
+<button id="next" style="width: 50px;height: 50px;background: #08E141;border-radius: 50%;border:none;text-align: center;line-height: 50px;position: fixed;top:400px;left: 1100px;cursor: pointer;">后一张</button>
+
+
+	<script type="text/javascript">
+		
+		var div = document.getElementById("belt");
+		var img = div.getElementsByTagName("img");
+		var btn = document.getElementById("btn");
+		var con = document.getElementById("con");
+		var priv = document.getElementById("priv");
+		var next = document.getElementById("next");
+		var i=0;
+		var term;
+		var test=function(){
+			clearInterval(term);
+			term = setInterval(function(){
+			if(i==0){
+				img[i].style.display= "inline-block";
+				i++;
+			}else if(i>0 && i<5){
+				img[i-1].style.display="none";
+				img[i].style.display= "inline-block";
+				i++;
+			}else{
+				img[i-1].style.display="none";
+				i=0;
+				img[i].style.display= "inline-block";
+				i++;
+			}
+		},500);
+		}
+		test();
+		btn.onclick = function(){clearInterval(term);	
+		}
+		con.onclick = test;
+		priv.onclick = function(){
+			clearInterval(term);
+			if(i==1){
+			img[i-1].style.display="none";
+			img[5-i].style.display="inline-block";
+			i=5;
+			}else{
+				img[i-1].style.display="none";
+				img[i-2].style.display="block";
+				i--;
+			}
+		}
+
+		next.onclick = function(){
+			clearInterval(term);
+			if(i==5){
+			img[i-1].style.display="none";
+			img[i-5].style.display="inline-block";
+			i=1;
+			}else{
+				img[i-1].style.display="none";
+				img[i].style.display="block";
+				i++;
+			}
+		}
+	</script>
+
+
+</body>				
+</html>
